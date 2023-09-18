@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E25539852AB884D400E2647E /* Pushup_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539842AB884D400E2647E /* Pushup_TrackerApp.swift */; };
-		E25539872AB884D400E2647E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539862AB884D400E2647E /* ContentView.swift */; };
+		E25539872AB884D400E2647E /* PushupTrackeriew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539862AB884D400E2647E /* PushupTrackeriew.swift */; };
 		E25539892AB884D600E2647E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25539882AB884D600E2647E /* Assets.xcassets */; };
 		E255398C2AB884D600E2647E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E255398B2AB884D600E2647E /* Preview Assets.xcassets */; };
 		E25539962AB884D600E2647E /* Pushup_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539952AB884D600E2647E /* Pushup_TrackerTests.swift */; };
 		E25539A02AB884D600E2647E /* Pushup_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255399F2AB884D600E2647E /* Pushup_TrackerUITests.swift */; };
 		E25539A22AB884D600E2647E /* Pushup_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539A12AB884D600E2647E /* Pushup_TrackerUITestsLaunchTests.swift */; };
+		E25539B32AB88DBB00E2647E /* PushupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539B22AB88DBB00E2647E /* PushupModel.swift */; };
+		E25539B52AB88E9A00E2647E /* PushupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539B42AB88E9A00E2647E /* PushupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		E25539812AB884D400E2647E /* Pushup Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pushup Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25539842AB884D400E2647E /* Pushup_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pushup_TrackerApp.swift; sourceTree = "<group>"; };
-		E25539862AB884D400E2647E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E25539862AB884D400E2647E /* PushupTrackeriew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupTrackeriew.swift; sourceTree = "<group>"; };
 		E25539882AB884D600E2647E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E255398B2AB884D600E2647E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E25539912AB884D600E2647E /* Pushup TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pushup TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		E255399B2AB884D600E2647E /* Pushup TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pushup TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E255399F2AB884D600E2647E /* Pushup_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pushup_TrackerUITests.swift; sourceTree = "<group>"; };
 		E25539A12AB884D600E2647E /* Pushup_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pushup_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E25539B22AB88DBB00E2647E /* PushupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupModel.swift; sourceTree = "<group>"; };
+		E25539B42AB88E9A00E2647E /* PushupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,9 @@
 		E25539832AB884D400E2647E /* Pushup Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				E25539842AB884D400E2647E /* Pushup_TrackerApp.swift */,
-				E25539862AB884D400E2647E /* ContentView.swift */,
-				E25539882AB884D600E2647E /* Assets.xcassets */,
+				E25539B02AB88D1400E2647E /* Model */,
+				E25539AF2AB88CE700E2647E /* View */,
+				E25539B12AB88D4500E2647E /* ViewModel */,
 				E255398A2AB884D600E2647E /* Preview Content */,
 			);
 			path = "Pushup Tracker";
@@ -125,6 +129,32 @@
 				E25539A12AB884D600E2647E /* Pushup_TrackerUITestsLaunchTests.swift */,
 			);
 			path = "Pushup TrackerUITests";
+			sourceTree = "<group>";
+		};
+		E25539AF2AB88CE700E2647E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E25539842AB884D400E2647E /* Pushup_TrackerApp.swift */,
+				E25539862AB884D400E2647E /* PushupTrackeriew.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E25539B02AB88D1400E2647E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E25539B22AB88DBB00E2647E /* PushupModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E25539B12AB88D4500E2647E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E25539882AB884D600E2647E /* Assets.xcassets */,
+				E25539B42AB88E9A00E2647E /* PushupViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E25539872AB884D400E2647E /* ContentView.swift in Sources */,
+				E25539B32AB88DBB00E2647E /* PushupModel.swift in Sources */,
+				E25539B52AB88E9A00E2647E /* PushupViewModel.swift in Sources */,
+				E25539872AB884D400E2647E /* PushupTrackeriew.swift in Sources */,
 				E25539852AB884D400E2647E /* Pushup_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -56,7 +56,7 @@ struct PushupTrackerView: View {
                 List {
                     ForEach(pushupviewModel.workouts) { workout in
                         HStack {
-                            Text((MediumDateFormatter.shared.string(from: workout.date)))
+                            Text(workout.dateString)
                             Spacer()
                             Text("\(workout.count)")
                         }

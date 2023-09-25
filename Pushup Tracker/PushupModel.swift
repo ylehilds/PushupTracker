@@ -20,6 +20,7 @@ struct PushupModel {
         
         workouts = []
         
+        addWorkout(count: 40, day: 3, month: 9, year: 2022)
         addWorkout(count: 50, day: 5, month: 9, year: 2023)
         addWorkout(count: 55, day: 7, month: 9, year: 2023)
         addWorkout(count: 61, day: 9, month: 9, year: 2023)

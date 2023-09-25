@@ -16,11 +16,17 @@ import Foundation
     // MARK: - Model access
     
     var pushupsThatCount: Int {
-        pushupData.pushupsThatCount
+//        pushupData.pushupsThatCount
+        return 0
     }
     
     var totalCount: Int {
-        pushupData.grandTotal
+//        pushupData.grandTotal
+        return 0
+    }
+    
+    var workouts: [PushupModel.WorkoutReport] {
+        pushupData.workouts
     }
     
     // MARK: - User Intents
@@ -38,7 +44,7 @@ import Foundation
     }
     
     func incrementTotal() {
-        pushupData.grandTotal = pushupData.grandTotal + 1
+//        pushupData.grandTotal = pushupData.grandTotal + 1
     }
     
 }

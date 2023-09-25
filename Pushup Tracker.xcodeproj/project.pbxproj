@@ -16,6 +16,9 @@
 		E25539A22AB884D600E2647E /* Pushup_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539A12AB884D600E2647E /* Pushup_TrackerUITestsLaunchTests.swift */; };
 		E25539B32AB88DBB00E2647E /* PushupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539B22AB88DBB00E2647E /* PushupModel.swift */; };
 		E25539B52AB88E9A00E2647E /* PushupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25539B42AB88E9A00E2647E /* PushupViewModel.swift */; };
+		E27EB1892AC1029400CF62CF /* MediumDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27EB1882AC1029400CF62CF /* MediumDateFormatter.swift */; };
+		E2B72CF72ABC0988009755C9 /* Dated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B72CF62ABC0988009755C9 /* Dated.swift */; };
+		E2B72CF92ABC099D009755C9 /* Array+Dated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B72CF82ABC099D009755C9 /* Array+Dated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		E25539A12AB884D600E2647E /* Pushup_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pushup_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E25539B22AB88DBB00E2647E /* PushupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupModel.swift; sourceTree = "<group>"; };
 		E25539B42AB88E9A00E2647E /* PushupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupViewModel.swift; sourceTree = "<group>"; };
+		E27EB1882AC1029400CF62CF /* MediumDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumDateFormatter.swift; sourceTree = "<group>"; };
+		E2B72CF62ABC0988009755C9 /* Dated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dated.swift; sourceTree = "<group>"; };
+		E2B72CF82ABC099D009755C9 /* Array+Dated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Dated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		E25539832AB884D400E2647E /* Pushup Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				E2B72CF52ABC096B009755C9 /* Utility */,
 				E25539B02AB88D1400E2647E /* Model */,
 				E25539AF2AB88CE700E2647E /* View */,
 				E25539B12AB88D4500E2647E /* ViewModel */,
@@ -155,6 +162,16 @@
 				E25539B42AB88E9A00E2647E /* PushupViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		E2B72CF52ABC096B009755C9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E2B72CF62ABC0988009755C9 /* Dated.swift */,
+				E2B72CF82ABC099D009755C9 /* Array+Dated.swift */,
+				E27EB1882AC1029400CF62CF /* MediumDateFormatter.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +306,9 @@
 			files = (
 				E25539B32AB88DBB00E2647E /* PushupModel.swift in Sources */,
 				E25539B52AB88E9A00E2647E /* PushupViewModel.swift in Sources */,
+				E2B72CF92ABC099D009755C9 /* Array+Dated.swift in Sources */,
+				E27EB1892AC1029400CF62CF /* MediumDateFormatter.swift in Sources */,
+				E2B72CF72ABC0988009755C9 /* Dated.swift in Sources */,
 				E25539872AB884D400E2647E /* PushupTrackeriew.swift in Sources */,
 				E25539852AB884D400E2647E /* Pushup_TrackerApp.swift in Sources */,
 			);

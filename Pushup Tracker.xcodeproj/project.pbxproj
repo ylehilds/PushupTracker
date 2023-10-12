@@ -106,10 +106,10 @@
 		E25539832AB884D400E2647E /* Pushup Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				E2B72CF52ABC096B009755C9 /* Utility */,
 				E25539B02AB88D1400E2647E /* Model */,
 				E25539AF2AB88CE700E2647E /* View */,
 				E25539B12AB88D4500E2647E /* ViewModel */,
+				E2B72CF52ABC096B009755C9 /* Utility */,
 				E255398A2AB884D600E2647E /* Preview Content */,
 			);
 			path = "Pushup Tracker";
@@ -170,8 +170,8 @@
 		E2B72CF52ABC096B009755C9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				E2B72CF62ABC0988009755C9 /* Dated.swift */,
 				E2B72CF82ABC099D009755C9 /* Array+Dated.swift */,
+				E2B72CF62ABC0988009755C9 /* Dated.swift */,
 				E27EB1882AC1029400CF62CF /* MediumDateFormatter.swift */,
 			);
 			name = Utility;
